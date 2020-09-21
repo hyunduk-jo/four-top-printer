@@ -8,6 +8,7 @@ import globalRouter from "./Router/globalRouter";
 import userRouter from "./Router/userRouter";
 import navRouter from "./Router/navRouter";
 import path from "path";
+import { localMiddleware } from "./middleware";
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "Views"));
+app.use(localMiddleware);
 
 // Routes
 app.use(routes.home, globalRouter);
