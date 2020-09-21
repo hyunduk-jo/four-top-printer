@@ -1,2 +1,27 @@
-.four-top__logo-container
-  img(src="https://github.com/hyunduk-jo/four-top-printer/blob/master/img/four-top-logo.png", alt="four-top-logo")
+header.home-header__container
+  .home-header__logo-container
+    a(href=routes.join)
+      p This place should be Four Top LOGO
+  .home-header__login-area
+    i.xi-user-o.xi-2x
+    i.xi-market.xi-2x
+    form(action="search", method="get")
+      input(type="text", placeholder="")
+      i.xi-search
+  .navigation-bar
+    ul
+      a(href=`${routes.nav}${routes.company}`)
+        li 회사소개
+      a(href=`${routes.nav}${routes.gallery}`)
+        li 3D 갤러리
+      a(href=`${routes.nav}${routes.community}`)
+        li 커뮤니티
+      a(href=`${routes.nav}${routes.rental}`)
+        li 렌탈
+      a(href=`${routes.nav}${routes.promotion}`)
+        li 프로모션
+      a(href=`${routes.nav}${routes.magazine}`)
+        li 매거진
+      a(href=`${routes.nav}${routes.serviceCenter}`)
+        li 고객센터
+      
