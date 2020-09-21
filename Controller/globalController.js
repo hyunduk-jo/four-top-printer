@@ -1,6 +1,6 @@
-export const home = (req, res) => res.send("Home");
-export const login = (req, res) => res.send("Login");
-export const join = (req, res) => res.send("Join");
-export const welcome = (req, res) => res.send("Welcom");
-export const search = (req, res) => res.send("Search");
-export const shoppingBasket = (req, res) => res.send("Shopping Basket");
+export const home = (req, res) => res.render("home");
+export const login = (req, res) => res.render("login");
+export const join = (req, res) => res.render("join");
+export const welcome = (req, res) => res.render("welcome");
+export const search = (req, res) => res.render("search");
+export const shoppingBasket = (req, res) => res.render("shoppingBasket");

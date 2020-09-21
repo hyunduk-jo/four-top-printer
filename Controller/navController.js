@@ -1,22 +1,22 @@
 //Company
-export const company = (req, res) => res.send("Company Ajax need");
+export const company = (req, res) => res.render("company");
 
 //Gallery
-export const gallery = (req, res) => res.send("Gallery");
-export const monthlyFree = (req, res) => res.send("Monthly Free");
-export const monthlyPaid = (req, res) => res.send("Monthly Paid");
+export const gallery = (req, res) => res.render("gallery");
+export const monthlyFree = (req, res) => res.render("monthlyFree");
+export const monthlyPaid = (req, res) => res.render("monthlyPaid");
 
 //Community
-export const community = (req, res) => res.send("Community");
+export const community = (req, res) => res.render("community");
 
 //Rental
-export const rental = (req, res) => res.send("Rental");
+export const rental = (req, res) => res.render("rental");
 
 //Promotion
-export const promotion = (req, res) => res.send("Promotion");
+export const promotion = (req, res) => res.render("promotion");
 
 //Magazine
-export const magazine = (req, res) => res.send("Magazine");
+export const magazine = (req, res) => res.render("magazine");
 
 //Service Center
-export const serviceCenter = (req, res) => res.send("Service Center");
+export const serviceCenter = (req, res) => res.render("serviceCenter");

@@ -7,6 +7,7 @@ import routes from "./routes";
 import globalRouter from "./Router/globalRouter";
 import userRouter from "./Router/userRouter";
 import navRouter from "./Router/navRouter";
+import path from "path";
 
 const app = express();
 
@@ -16,6 +17,8 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "Views"));
 
 // Routes
 app.use(routes.home, globalRouter);
