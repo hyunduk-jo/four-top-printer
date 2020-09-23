@@ -1,4 +1,22 @@
 extend layout/main.pug
 
 block content
-  h1 Login
+  .login__logo
+    a(href=routes.home)
+      h1 LOGO
+  h3 4TOP
+  .login__form-container
+    form(action=routes.login, method="post")
+      input(type="email", name="email", placeholder="아이디", required)
+      input(type="password", name="password", placeholder="비밀번호", required)
+      input(type="submit", value="Log In")
+  .login__links
+    .login__join-link
+      a(href=routes.join)
+        span 회원가입
+    .login__find-id-link
+      a(href=`${routes.user}${routes.findId}`)
+        span 아이디 찾기
+    .login__find-pw-link
+      a(href=`${routes.user}${routes.findPw}`)
+        span 비밀번호 찾기

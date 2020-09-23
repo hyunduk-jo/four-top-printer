@@ -4,4 +4,26 @@ block headerContent
   include partial/homeHeader.pug
 
 block content
-  h3 Home
+  h1 This is Home~!!
+  .home__monthly-work
+    .monthly-work__free
+      a(href=`${routes.nav}${routes.monthlyFree}`)
+        h3 FREE
+    .monthly-work__paid
+      a(href=`${routes.nav}${routes.monthlyPaid}`)
+        h3 PAID
+    .monthly-work__creator
+      a(href="#")
+        h3 CREATOR
+  a(href=`${routes.nav}${routes.home}`)
+    .banner
+      h2 banner What To Do?
+  a(href=`${routes.nav}${routes.promotion}`)
+    .banner__promotion
+      h2 untitle promotion
+  a(href=`${routes.nav}${routes.rental}`)
+    .banner__rental
+      h2 untitle rental
+  a(href=`${routes.nav}${routes.company}`)
+    .banner__company-history
+      h2 untitle company history

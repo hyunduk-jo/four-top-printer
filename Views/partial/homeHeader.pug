@@ -3,11 +3,14 @@ header.home-header__container
     a(href=routes.join)
       p This place should be Four Top LOGO
   .home-header__login-area
-    i.xi-user-o.xi-2x
-    i.xi-market.xi-2x
-    form(action="search", method="get")
-      input(type="text", placeholder="")
-      i.xi-search
+    a(href=routes.login)
+      i.xi-user-o.xi-2x
+    a(href=routes.shoppingBasket)
+      i.xi-market.xi-2x
+    .search  
+      form(action="search", method="get")
+        input(type="text", placeholder="")
+        i.xi-search
   .navigation-bar
     ul
       a(href=`${routes.nav}${routes.company}`)
@@ -24,4 +27,3 @@ header.home-header__container
         li 매거진
       a(href=`${routes.nav}${routes.serviceCenter}`)
         li 고객센터
-      
