@@ -13,7 +13,7 @@ const FileSchema = new mongoose.Schema({
     type: String,
     required: "Description is required"
   },
-  uploadAt: {
+  createdAt: {
     type: Date,
     default: Date.now
   }

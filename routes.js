@@ -32,6 +32,7 @@ const MONTHLY_PAID = "/monthly-paid";
 
 //Community
 const COMMUNITY = "/community";
+const COMMUNITY = "/community/upload";
 
 //Rental
 const RENTAL = "/rental";
